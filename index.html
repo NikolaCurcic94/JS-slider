@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .root {
+            width: 900px;
+        }
+
+        .slider {
+            width: 100%;
+            display: flex;
+            /* overflow-x: hidden; */
+            position: relative;
+            aspect-ratio: 16 / 10;
+        }
+
+        h1 {
+            color: white;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .slide {
+            flex-basis: 100%;
+            background-size: cover;
+            aspect-ratio: 16 / 10;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.5s ease-in-out;
+            opacity: 1;
+        }
+
+        .navigation-dots__wrapper {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 10%;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navigation-dot {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgb(123, 255, 0);
+            background-color: rgb(83, 69, 174);
+            border-radius: 50%;
+        }
+
+        .active-dot {
+            background-color: #a9a9fd;
+        }
+
+        .left-button,
+        .right-button {
+            position: absolute;
+            width: 80px;
+            padding-block: 5px;
+            border: 2px solid rgb(123, 255, 0);
+            top: 40%;
+            font-size: 18px;
+            z-index: 2;
+            color: #1f1f8b;
+            background-color: #a9a9fd;
+        }
+
+        .left-button[disabled],
+        .right-button[disabled] {
+            background-color: #6a6ab8;
+        }
+
+        .left-button {
+            left: 7%;
+            border-radius: 0px 25px 0px 50px;
+            padding-left: 10px;
+        }
+
+        .right-button {
+            right: 7%;
+            border-radius: 25px 0px 50px 0px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider js-slider" data-component="Slider" data-autoplay="false" data-interval="1000"
+        data-infinite="false" data-animation-type="slide" data-bullets="true"></div>
+    <script>var exports = {};</script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

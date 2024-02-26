@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 16543,
+      "title": "jsonhgfcdx-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "data": [
+    {
+      "img": "https://picsum.photos/id/221/1200/600",
+      "title": "SLIDE 1",
+      "buttonText": "Explore",
+      "buttonLink": "https://google.com"
+    },
+    {
+      "img": "https://picsum.photos/id/12/1200/600",
+      "title": "SLIDE 2",
+      "buttonText": "Read more",
+      "buttonLink": "https://google.com"
+    },
+    {
+      "img": "https://picsum.photos/id/13/1200/600",
+      "title": "SLIDE 3",
+      "buttonText": "Contact us",
+      "buttonLink": "https://google.com"
+    },
+    {
+      "img": "https://picsum.photos/id/14/1200/600",
+      "title": "SLIDE 4",
+      "buttonText": "Best Sellers",
+      "buttonLink": "https://google.com"
+    },
+    {
+      "img": "https://picsum.photos/id/7/1200/600",
+      "title": "SLIDE 5",
+      "buttonText": "Buy",
+      "buttonLink": "https://google.com"
+    }
+  ]
+}
